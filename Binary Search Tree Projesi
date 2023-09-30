@@ -1,0 +1,23 @@
+Proje 3
+---------------------------------------------------------------------------------------------
+[7, 5, 1, 8, 3, 6, 0, 9, 4, 2] dizisinin Binary-Search-Tree aşamalarını yazınız.
+
+Örnek: root x'dir. root'un sağından y bulunur. Solunda z bulunur vb.
+
+---------------------------------------------------------------------------------------------
+
+
+Verilen [7, 5, 1, 8, 3, 6, 0, 9, 4, 2] dizisinin Binary Search Tree (BST) oluşturulma aşamaları şu şekildedir:
+
+1- Dizi ilk eleman olan 7 ile başlar. (root: 7)
+2- 5, 1, 8, 3, 6, 0, 9, 4, 2 sırasıyla eklenir:
+  5, 7'nin sol çocuğu olur. (root: 7, sol: 5)
+  1, 5'in sol çocuğu olur. (root: 7, sol: 5, sol: 1)
+  8, 7'nin sağ çocuğu olur. (root: 7, sol: 5, sol: 1, sağ: 8)
+  3, 5'in sağ çocuğu olur. (root: 7, sol: 5, sol: 1, sol: 3, sağ: 8)
+  6, 3'ün sağ çocuğu olur. (root: 7, sol: 5, sol: 1, sol: 3, sağ: 8, sol: 6)
+  0, 1'in sol çocuğu olur. (root: 7, sol: 5, sol: 1, sol: 0, sol: 3, sağ: 8, sol: 6)
+  9, 8'in sağ çocuğu olur. (root: 7, sol: 5, sol: 1, sol: 0, sol: 3, sağ: 8, sağ: 9)
+  4, 3'ün sol çocuğu olur. (root: 7, sol: 5, sol: 1, sol: 0, sol: 3, sol: 4, sağ: 8, sağ: 9)
+  2, 4'ün sol çocuğu olur. (root: 7, sol: 5, sol: 1, sol: 0, sol: 3, sol: 4, sol: 2, sağ: 8, sağ: 9)
+  Bu şekilde verilen dizi bir Binary Search Tree'e dönüştürülmüştür.
